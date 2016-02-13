@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Product Version: Vivado v2015.4 (64-bit)              -->
+<!-- Product Version: Vivado v2015.3 (64-bit)              -->
 <!--                                                         -->
 <!-- Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="10" Path="D:/Files/Vivado/EE/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.xpr">
+<Project Version="7" Minor="10" Path="C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="e8188c5a3d174ca1976a880790579d02"/>
@@ -99,9 +99,8 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/new/test_block.v">
+      <File Path="$PSRCDIR/sources_1/new/Test_Block.sv">
         <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -129,7 +128,7 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Single_Location"/>
+        <Option Name="TopModule" Val="Test_Block"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
@@ -151,7 +150,7 @@
       <Filter Type="Srcs"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
-        <Option Name="TopModule" Val="Single_Location"/>
+        <Option Name="TopModule" Val="Test_Block"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
         <Option Name="SrcSet" Val="sources_1"/>
