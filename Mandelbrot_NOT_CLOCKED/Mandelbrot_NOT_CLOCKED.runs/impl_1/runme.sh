@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD=C:/Users/kaveh/Documents/Vivado Projects/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/impl_1
+HD_PWD=C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/impl_1
 cd "$HD_PWD"
 
 HD_LOG=runme.log

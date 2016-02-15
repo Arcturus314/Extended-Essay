@@ -3,44 +3,42 @@
     with args -log Test_Block.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Test_Block.tcl
 
 
-****** Vivado v2015.4 (64-bit)
-  **** SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
-  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+****** Vivado v2015.3 (64-bit)
+  **** SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+  **** IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
     ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 
 source Test_Block.tcl -notrace
-Command: synth_design -top Test_Block -part xc7a35tcpg236-1 -keep_equivalent_registers
+Command: synth_design -top Test_Block -part xc7a35tcpg236-1 -fanout_limit 400 -fsm_extraction one_hot -keep_equivalent_registers -resource_sharing off -no_lc -shreg_min_size 5
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 264.633 ; gain = 93.094
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 260.895 ; gain = 89.770
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Test_Block' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Test_Block.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Test_Block' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Test_Block.sv:23]
 	Parameter imagPos bound to: 8'b00000000 
-INFO: [Synth 8-638] synthesizing module 'Clock_Divide' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Clock_Divide.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Clock_Divide' (1#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Clock_Divide.v:23]
-INFO: [Synth 8-638] synthesizing module 'Single_Location' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:23]
-WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:50]
-WARNING: [Synth 8-311] ignoring non-constant assignment in initial block [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:51]
-INFO: [Synth 8-638] synthesizing module 'Complex_add' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_add.v:23]
-INFO: [Synth 8-638] synthesizing module 'Complex_Multiply' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_Multiply.v:23]
-INFO: [Synth 8-638] synthesizing module 'Multiplier' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Multiplier.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Multiplier' (2#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Multiplier.v:23]
-INFO: [Synth 8-638] synthesizing module 'ToTCmplmt' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/ToTCmplmt.v:23]
-INFO: [Synth 8-256] done synthesizing module 'ToTCmplmt' (3#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/ToTCmplmt.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Complex_Multiply' (4#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_Multiply.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Complex_add' (5#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_add.v:23]
-INFO: [Synth 8-638] synthesizing module 'Comparator' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:23]
+INFO: [Synth 8-638] synthesizing module 'Clock_Divide' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Clock_Divide.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Divide' (1#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Clock_Divide.v:23]
+INFO: [Synth 8-638] synthesizing module 'Single_Location' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:23]
+INFO: [Synth 8-638] synthesizing module 'Complex_add' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_add.v:23]
+INFO: [Synth 8-638] synthesizing module 'Complex_Multiply' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_Multiply.v:23]
+INFO: [Synth 8-638] synthesizing module 'Multiplier' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Multiplier.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Multiplier' (2#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Multiplier.v:23]
+INFO: [Synth 8-638] synthesizing module 'ToTCmplmt' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/ToTCmplmt.v:23]
+INFO: [Synth 8-256] done synthesizing module 'ToTCmplmt' (3#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/ToTCmplmt.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Complex_Multiply' (4#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_Multiply.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Complex_add' (5#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_add.v:23]
+INFO: [Synth 8-638] synthesizing module 'Comparator' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:23]
 	Parameter dim_pos bound to: 8'b01010100 
 	Parameter dim_neg bound to: 8'b10101100 
-INFO: [Synth 8-256] done synthesizing module 'Comparator' (6#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:23]
-INFO: [Synth 8-638] synthesizing module 'Iter_Counter' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Iter_Counter.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Iter_Counter' (7#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Iter_Counter.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Single_Location' (8#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Test_Block' (9#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Test_Block.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'Comparator' (6#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:23]
+INFO: [Synth 8-638] synthesizing module 'Iter_Counter' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Iter_Counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Iter_Counter' (7#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Iter_Counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Single_Location' (8#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Test_Block' (9#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Test_Block.sv:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 301.766 ; gain = 130.227
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 297.332 ; gain = 126.207
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -50,42 +48,42 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 301.766 ; gain = 130.227
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 297.332 ; gain = 126.207
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]
-Finished Parsing XDC File [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Test_Block_propImpl.xdc].
+Parsing XDC File [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Test_Block_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Test_Block_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 619.469 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 613.973 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 619.469 ; gain = 447.930
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 613.973 ; gain = 442.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 619.469 ; gain = 447.930
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 613.973 ; gain = 442.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 619.469 ; gain = 447.930
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 613.973 ; gain = 442.848
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "iterations" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 619.469 ; gain = 447.930
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 613.973 ; gain = 442.848
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -157,16 +155,16 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 619.469 ; gain = 447.930
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 613.973 ; gain = 442.848
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "iterations" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "iterations" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 619.469 ; gain = 447.930
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 613.973 ; gain = 442.848
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 619.469 ; gain = 447.930
+Finished Parallel Reinference  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 613.973 ; gain = 442.848
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -276,211 +274,11 @@ WARNING: [Synth 8-3332] Sequential element (\location_5/temp_imag_reg[7] ) is un
 WARNING: [Synth 8-3332] Sequential element (\location_5/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
 WARNING: [Synth 8-3332] Sequential element (\location_5/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
 WARNING: [Synth 8-3332] Sequential element (\location_5/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_5/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_5/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_5/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_5/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_6/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_7/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_8/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_9/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_10/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_11/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_12/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_13/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_14/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_15/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_16/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_real_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_real_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_real_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_real_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_imag_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_imag_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_imag_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_imag_reg[4] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_imag_reg[3] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_imag_reg[2] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_imag_reg[1] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_17/temp_imag_reg[0] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_18/temp_real_reg[7] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_18/temp_real_reg[6] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_18/temp_real_reg[5] ) is unused and will be removed from module Test_Block.
-WARNING: [Synth 8-3332] Sequential element (\location_18/temp_real_reg[4] ) is unused and will be removed from module Test_Block.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 300 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 619.469 ; gain = 447.930
+Finished Area Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 613.973 ; gain = 442.848
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 619.469 ; gain = 447.930
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:57 ; elapsed = 00:01:00 . Memory (MB): peak = 613.973 ; gain = 442.848
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -494,31 +292,31 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 619.469 ; gain = 447.930
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 613.973 ; gain = 442.848
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 619.469 ; gain = 447.930
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 613.973 ; gain = 442.848
 ---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 613.973 ; gain = 442.848
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 613.973 ; gain = 442.848
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 644.227 ; gain = 472.688
+Finished Technology Mapping : Time (s): cpu = 00:01:11 ; elapsed = 00:01:14 . Memory (MB): peak = 631.281 ; gain = 460.156
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 644.227 ; gain = 472.688
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 644.227 ; gain = 472.688
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -535,7 +333,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 644.227 ; gain = 472.688
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 631.281 ; gain = 460.156
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -548,7 +346,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 644.227 ; gain = 472.688
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 631.281 ; gain = 460.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -560,25 +358,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 644.227 ; gain = 472.688
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 631.281 ; gain = 460.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 644.227 ; gain = 472.688
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 631.281 ; gain = 460.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 644.227 ; gain = 472.688
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 631.281 ; gain = 460.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 644.227 ; gain = 472.688
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 631.281 ; gain = 460.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -596,7 +394,7 @@ Report Cell Usage:
 +------+-------+------+
 |1     |BUFG   |     2|
 |2     |CARRY4 |     5|
-|3     |LUT1   |   281|
+|3     |LUT1   |   276|
 |4     |LUT2   |   522|
 |5     |LUT3   |   518|
 |6     |LUT4   |   259|
@@ -604,7 +402,7 @@ Report Cell Usage:
 |8     |LUT6   |  1062|
 |9     |MUXF7  |   272|
 |10    |MUXF8  |   136|
-|11    |FDRE   |  3904|
+|11    |FDRE   |  3899|
 |12    |FDSE   |   256|
 |13    |IBUF   |     3|
 |14    |OBUF   |    16|
@@ -614,7 +412,7 @@ Report Instance Areas:
 +------+---------------+--------------------+------+
 |      |Instance       |Module              |Cells |
 +------+---------------+--------------------+------+
-|1     |top            |                    |  7494|
+|1     |top            |                    |  7484|
 |2     |  location_0   |Single_Location     |    25|
 |3     |    count      |Iter_Counter_509    |    17|
 |4     |  location_1   |Single_Location_0   |    25|
@@ -1130,11 +928,11 @@ Report Instance Areas:
 |514   |  newClock     |Clock_Divide        |    42|
 +------+---------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 644.227 ; gain = 472.688
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 631.281 ; gain = 460.156
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4104 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:48 . Memory (MB): peak = 644.227 ; gain = 135.078
-Synthesis Optimization Complete : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 644.227 ; gain = 472.688
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:00 ; elapsed = 00:01:07 . Memory (MB): peak = 631.281 ; gain = 127.793
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:16 . Memory (MB): peak = 631.281 ; gain = 460.156
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -1144,8 +942,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-34 Infos, 302 Warnings, 0 Critical Warnings and 0 Errors encountered.
+34 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 644.227 ; gain = 456.844
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 644.227 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Feb 20 23:47:17 2016...
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 631.281 ; gain = 444.434
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 631.281 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 15 19:33:27 2016...

@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
-| Date         : Sat Feb 20 23:47:52 2016
-| Host         : Kaveh_Bardia_PC running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
+| Date         : Mon Feb 15 19:34:24 2016
+| Host         : Kaveh_SP running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Test_Block_control_sets_placed.rpt
 | Design       : Test_Block
 | Device       : xc7a35t
@@ -23,7 +23,7 @@ Table of Contents
 |                               Status                              | Count |
 +-------------------------------------------------------------------+-------+
 | Number of unique control sets                                     |     5 |
-| Minimum Number of register sites lost to control set restrictions |     8 |
+| Minimum Number of register sites lost to control set restrictions |     5 |
 +-------------------------------------------------------------------+-------+
 
 
@@ -33,12 +33,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |            2075 |          488 |
+| No           | No                    | No                     |            2075 |          441 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               8 |            8 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |            2077 |          492 |
+| Yes          | Yes                   | No                     |            2072 |          649 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -49,10 +49,10 @@ Table of Contents
 |    Clock Signal    |     Enable Signal     | Set/Reset Signal | Slice Load Count | Bel Load Count |
 +--------------------+-----------------------+------------------+------------------+----------------+
 |  clock_BUFG        | iterations[7]_i_1_n_0 |                  |                8 |              8 |
+|  clock_BUFG        | iterations[7]_i_1_n_0 | reset_IBUF       |                5 |             16 |
 |  clockIn_IBUF_BUFG |                       |                  |                6 |             19 |
-|  clock_BUFG        | iterations[7]_i_1_n_0 | reset_IBUF       |                4 |             21 |
-|  clock_BUFG        |                       |                  |              482 |           2056 |
-|  clock_BUFG        | enable_IBUF           | reset_IBUF       |              488 |           2056 |
+|  clock_BUFG        |                       |                  |              435 |           2056 |
+|  clock_BUFG        | enable_IBUF           | reset_IBUF       |              644 |           2056 |
 +--------------------+-----------------------+------------------+------------------+----------------+
 
 

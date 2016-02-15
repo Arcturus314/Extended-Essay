@@ -49,7 +49,7 @@ start_step write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   open_checkpoint Single_Location_routed.dcp
-  set_property webtalk.parent_dir {C:/Users/kaveh/Documents/Vivado Projects/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.cache/wt} [current_project]
+  set_property webtalk.parent_dir {C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.cache/wt} [current_project]
   catch { write_mem_info -force Single_Location.mmi }
   write_bitstream -force Single_Location.bit 
   catch { write_sysdef -hwdef Single_Location.hwdef -bitfile Single_Location.bit -meminfo Single_Location.mmi -file Single_Location.sysdef }

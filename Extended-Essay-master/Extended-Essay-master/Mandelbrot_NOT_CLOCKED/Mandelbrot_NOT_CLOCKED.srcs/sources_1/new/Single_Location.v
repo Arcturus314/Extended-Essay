@@ -45,11 +45,13 @@ module Single_Location(
     
     
     //Shouldn't need this, I just have to hit reset
-    initial
+    //This doesn't work anyway: real_coords and imag_coords are not constants
+    //As such it is commented out
+    /*initial
     begin
         temp_real <= real_coords;
         temp_imag <= imag_coords;
-    end
+    end*/
     
 
     Complex_add adder
