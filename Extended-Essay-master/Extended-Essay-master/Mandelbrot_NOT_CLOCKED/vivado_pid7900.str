@@ -1,0 +1,80 @@
+/*
+
+Vivado v2015.4 (64-bit)
+SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+Process ID: 7900
+
+Current time: 	2/16/16 9:48:53 PM GMT
+Time zone: 	Greenwich Mean Time (Europe/London)
+
+OS: Windows 8
+Version: 6.2
+Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 3072x1728
+Screen resolution (DPI): 96
+Available screens: 2
+Default font: family=Tahoma,name=Tahoma,style=plain,size=11
+
+Java version: 	1.8.0_45 64-bit
+Java home: 	D:/Programs/Vivado/Vivado/2015.4/tps/win64/jre
+
+User name: 	Kaveh
+User home directory: C:/Users/Kaveh
+User working directory: D:/Files/Vivado/EE/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Vivado preferences path: C:/Users/Kaveh/AppData/Roaming/Xilinx/Vivado/2015.4/vivado.ini
+Vivado layouts directory: C:/Users/Kaveh/AppData/Roaming/Xilinx/Vivado/2015.4/layouts
+
+GUI allocated memory:	184 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 399 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bF:g (cq:JFrame):  Open Project : addNotify
+// Opening Vivado Project: D:\Files\Vivado\EE\Extended-Essay-master\Extended-Essay-master\Mandelbrot_NOT_CLOCKED\Mandelbrot_NOT_CLOCKED.xpr. Version: Vivado v2015.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// [GUI Memory]: 47 MB (+47328kb) [00:00:08]
+// [Engine Memory]: 351 MB (+216623kb) [00:00:08]
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/Files/Vivado/EE/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'D:/Files/Vivado/EE/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 52 MB (+2019kb) [00:00:13]
+// [Engine Memory]: 416 MB (+49214kb) [00:00:13]
+// [GUI Memory]: 69 MB (+14894kb) [00:00:13]
+// [Engine Memory]: 446 MB (+10090kb) [00:00:13]
+// [Engine Memory]: 470 MB (+2199kb) [00:00:15]
+// HMemoryUtils.trashcanNow. Engine heap size: 473 MB. GUI used memory: 35 MB. Current time: 2/16/16 9:48:58 PM GMT
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Programs/Vivado/Vivado/2015.4/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: Mandelbrot_NOT_CLOCKED; location: D:/Files/Vivado/EE/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED; part: xc7a35tcpg236-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 726.250 ; gain = 171.078 
+// TclEventType: DG_UPDATE_GRAPH
+dismissDialog("Open Project"); // bF:g (cq:JFrame)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 500 MB (+6862kb) [00:00:24]
+// Elapsed time: 22 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1, true); // y:k (I:JPanel, cq:JFrame) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files]", 1); // y:k (I:JPanel, cq:JFrame)
+// [GUI Memory]: 74 MB (+1604kb) [00:00:39]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Syntax Error Files, test_block.v]", 2, false); // y:k (I:JPanel, cq:JFrame)
+// [GUI Memory]: 77 MB (+14kb) [00:03:24]
