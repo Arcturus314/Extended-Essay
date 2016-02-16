@@ -29,12 +29,12 @@ module Clock_Divide(
 
     );
     //implementation
-    reg [17:0] clockDivide;
+    reg [15:0] clockDivide;
     
     always @(posedge clock)
     begin
         clockDivide <= (clockDivide+1);
-        clockOut <= clockDivide[17];
+        clockOut <= clockDivide[15];
     end
     
 

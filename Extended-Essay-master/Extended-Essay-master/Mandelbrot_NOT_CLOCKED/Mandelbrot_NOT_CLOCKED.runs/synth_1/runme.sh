@@ -11,9 +11,9 @@ echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executi
 exit
 
 if [ -z "$PATH" ]; then
-  PATH=D:/Programs/Vivado/SDK/2015.4/bin;D:/Programs/Vivado/Vivado/2015.4/ids_lite/ISE/bin/nt64;D:/Programs/Vivado/Vivado/2015.4/ids_lite/ISE/lib/nt64:D:/Programs/Vivado/Vivado/2015.4/bin
+  PATH=C:/Xilinx/SDK/2015.3/bin;C:/Xilinx/Vivado/2015.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2015.3/bin
 else
-  PATH=D:/Programs/Vivado/SDK/2015.4/bin;D:/Programs/Vivado/Vivado/2015.4/ids_lite/ISE/bin/nt64;D:/Programs/Vivado/Vivado/2015.4/ids_lite/ISE/lib/nt64:D:/Programs/Vivado/Vivado/2015.4/bin:$PATH
+  PATH=C:/Xilinx/SDK/2015.3/bin;C:/Xilinx/Vivado/2015.3/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2015.3/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2015.3/bin:$PATH
 fi
 export PATH
 
@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/synth_1'
+HD_PWD=C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/synth_1
 cd "$HD_PWD"
 
 HD_LOG=runme.log

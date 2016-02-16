@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
-# Vivado v2015.4 (64-bit)
-# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
-# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
-# Start of session at: Mon Feb 22 21:41:16 2016
-# Process ID: 10436
-# Current directory: D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/synth_1
+# Vivado v2015.3 (64-bit)
+# SW Build 1368829 on Mon Sep 28 20:06:43 MDT 2015
+# IP Build 1367837 on Mon Sep 28 08:56:14 MDT 2015
+# Start of session at: Tue Feb 16 01:25:33 2016
+# Process ID: 4144
+# Current directory: C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/synth_1
 # Command line: vivado.exe -log Test_Block.vds -mode batch -messageDb vivado.pb -notrace -source Test_Block.tcl
-# Log file: D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/synth_1/Test_Block.vds
-# Journal file: D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/synth_1\vivado.jou
+# Log file: C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/synth_1/Test_Block.vds
+# Journal file: C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source Test_Block.tcl -notrace
 Command: synth_design -top Test_Block -part xc7a35tcpg236-1 -directive AreaOptimized_high -control_set_opt_threshold 1
@@ -15,30 +15,30 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 264.680 ; gain = 93.383
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 260.367 ; gain = 89.934
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'Test_Block' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Test_Block.sv:23]
+INFO: [Synth 8-638] synthesizing module 'Test_Block' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Test_Block.sv:23]
 	Parameter imagPos bound to: 8'b00000000 
-INFO: [Synth 8-638] synthesizing module 'Clock_Divide' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Clock_Divide.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Clock_Divide' (1#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Clock_Divide.v:23]
-INFO: [Synth 8-638] synthesizing module 'Single_Location' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:23]
-INFO: [Synth 8-638] synthesizing module 'Complex_add' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_add.v:23]
-INFO: [Synth 8-638] synthesizing module 'Complex_Multiply' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_Multiply.v:23]
-INFO: [Synth 8-638] synthesizing module 'Multiplier' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Multiplier.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Multiplier' (2#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Multiplier.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Complex_Multiply' (3#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_Multiply.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Complex_add' (4#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_add.v:23]
-INFO: [Synth 8-638] synthesizing module 'Comparator' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:23]
+INFO: [Synth 8-638] synthesizing module 'Clock_Divide' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Clock_Divide.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Clock_Divide' (1#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Clock_Divide.v:23]
+INFO: [Synth 8-638] synthesizing module 'Single_Location' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:23]
+INFO: [Synth 8-638] synthesizing module 'Complex_add' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_add.v:23]
+INFO: [Synth 8-638] synthesizing module 'Complex_Multiply' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_Multiply.v:23]
+INFO: [Synth 8-638] synthesizing module 'Multiplier' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Multiplier.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Multiplier' (2#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Multiplier.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Complex_Multiply' (3#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_Multiply.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Complex_add' (4#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Complex_add.v:23]
+INFO: [Synth 8-638] synthesizing module 'Comparator' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:23]
 	Parameter dim_pos bound to: 8'b01010100 
 	Parameter dim_neg bound to: 8'b10101100 
-WARNING: [Synth 8-567] referenced signal 'comparator_out' should be on the sensitivity list [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:60]
-INFO: [Synth 8-256] done synthesizing module 'Comparator' (5#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:23]
-INFO: [Synth 8-638] synthesizing module 'Iter_Counter' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Iter_Counter.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Iter_Counter' (6#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Iter_Counter.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Single_Location' (7#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:23]
-INFO: [Synth 8-256] done synthesizing module 'Test_Block' (8#1) [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Test_Block.sv:23]
+WARNING: [Synth 8-567] referenced signal 'comparator_out' should be on the sensitivity list [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:60]
+INFO: [Synth 8-256] done synthesizing module 'Comparator' (5#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:23]
+INFO: [Synth 8-638] synthesizing module 'Iter_Counter' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Iter_Counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Iter_Counter' (6#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/imports/sources_1/new/Iter_Counter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Single_Location' (7#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:23]
+INFO: [Synth 8-256] done synthesizing module 'Test_Block' (8#1) [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Test_Block.sv:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 301.855 ; gain = 130.559
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 297.688 ; gain = 127.254
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -48,43 +48,43 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 301.855 ; gain = 130.559
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 297.688 ; gain = 127.254
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]
-Finished Parsing XDC File [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Test_Block_propImpl.xdc].
+Parsing XDC File [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/constrs_1/imports/basys3_master/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Test_Block_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/Test_Block_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.016 . Memory (MB): peak = 630.488 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.031 . Memory (MB): peak = 625.223 ; gain = 0.004
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 630.488 ; gain = 459.191
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 625.223 ; gain = 454.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 630.488 ; gain = 459.191
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 625.223 ; gain = 454.789
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 630.488 ; gain = 459.191
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 625.223 ; gain = 454.789
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "iterations" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'comparator_out_reg' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:69]
+WARNING: [Synth 8-327] inferring latch for variable 'comparator_out_reg' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Comparator.v:69]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 630.488 ; gain = 459.191
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 625.223 ; gain = 454.789
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -93,7 +93,7 @@ Report RTL Partitions:
 +------+----------------+------------+----------+
 |1     |Test_Block__GB0 |           1|     24592|
 |2     |Test_Block__GB1 |           1|     12076|
-|3     |Test_Block__GB2 |           1|     12609|
+|3     |Test_Block__GB2 |           1|     12601|
 |4     |Test_Block__GB3 |           1|     12304|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -6797,7 +6797,7 @@ BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 630.488 ; gain = 459.191
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 625.223 ; gain = 454.789
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -9876,9 +9876,9 @@ DSP Report: Generating DSP location_0/adder/realOut, operation Mode is: PCIN+(A:
 DSP Report: register location_0/temp_real_reg is absorbed into DSP location_0/adder/realOut.
 DSP Report: operator location_0/adder/realOut is absorbed into DSP location_0/adder/realOut.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 630.488 ; gain = 459.191
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 625.223 ; gain = 454.789
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 630.488 ; gain = 459.191
+Finished Parallel Reinference  : Time (s): cpu = 00:00:51 ; elapsed = 00:00:52 . Memory (MB): peak = 625.223 ; gain = 454.789
 
 Report RTL Partitions: 
 +------+----------------+------------+----------+
@@ -9886,110 +9886,110 @@ Report RTL Partitions:
 +------+----------------+------------+----------+
 |1     |Test_Block__GB0 |           1|     24827|
 |2     |Test_Block__GB1 |           1|     12186|
-|3     |Test_Block__GB2 |           1|     12740|
+|3     |Test_Block__GB2 |           1|     12732|
 |4     |Test_Block__GB3 |           1|     12433|
 +------+----------------+------------+----------+
 WARNING: [Synth 8-3323] Resources of type DSP have been overutilized. Used = 768, Available = 90. Use report_utilization command for details.
-INFO: [Synth 8-4471] merging register 'location_129/temp_imag_reg[7:0]' into 'location_129/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_129/temp_real_reg[7:0]' into 'location_129/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_129/temp_real_reg[7:0]' into 'location_129/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_128/temp_imag_reg[7:0]' into 'location_128/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_128/temp_real_reg[7:0]' into 'location_128/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_128/temp_real_reg[7:0]' into 'location_128/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_127/temp_imag_reg[7:0]' into 'location_127/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_127/temp_real_reg[7:0]' into 'location_127/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_127/temp_real_reg[7:0]' into 'location_127/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_126/temp_imag_reg[7:0]' into 'location_126/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_126/temp_real_reg[7:0]' into 'location_126/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_126/temp_real_reg[7:0]' into 'location_126/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_125/temp_imag_reg[7:0]' into 'location_125/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_125/temp_real_reg[7:0]' into 'location_125/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_125/temp_real_reg[7:0]' into 'location_125/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_124/temp_imag_reg[7:0]' into 'location_124/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_124/temp_real_reg[7:0]' into 'location_124/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_124/temp_real_reg[7:0]' into 'location_124/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_123/temp_imag_reg[7:0]' into 'location_123/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_123/temp_real_reg[7:0]' into 'location_123/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_123/temp_real_reg[7:0]' into 'location_123/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_122/temp_imag_reg[7:0]' into 'location_122/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_122/temp_real_reg[7:0]' into 'location_122/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_122/temp_real_reg[7:0]' into 'location_122/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_121/temp_imag_reg[7:0]' into 'location_121/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_121/temp_real_reg[7:0]' into 'location_121/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_121/temp_real_reg[7:0]' into 'location_121/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_120/temp_imag_reg[7:0]' into 'location_120/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_120/temp_real_reg[7:0]' into 'location_120/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_120/temp_real_reg[7:0]' into 'location_120/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_119/temp_imag_reg[7:0]' into 'location_119/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_119/temp_real_reg[7:0]' into 'location_119/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_119/temp_real_reg[7:0]' into 'location_119/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_118/temp_imag_reg[7:0]' into 'location_118/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_118/temp_real_reg[7:0]' into 'location_118/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_118/temp_real_reg[7:0]' into 'location_118/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_117/temp_imag_reg[7:0]' into 'location_117/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_117/temp_real_reg[7:0]' into 'location_117/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_117/temp_real_reg[7:0]' into 'location_117/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_116/temp_imag_reg[7:0]' into 'location_116/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_116/temp_real_reg[7:0]' into 'location_116/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_116/temp_real_reg[7:0]' into 'location_116/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_115/temp_imag_reg[7:0]' into 'location_115/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_115/temp_real_reg[7:0]' into 'location_115/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_115/temp_real_reg[7:0]' into 'location_115/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_114/temp_imag_reg[7:0]' into 'location_114/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_114/temp_real_reg[7:0]' into 'location_114/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_114/temp_real_reg[7:0]' into 'location_114/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_113/temp_imag_reg[7:0]' into 'location_113/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_113/temp_real_reg[7:0]' into 'location_113/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_113/temp_real_reg[7:0]' into 'location_113/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_112/temp_imag_reg[7:0]' into 'location_112/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_112/temp_real_reg[7:0]' into 'location_112/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_112/temp_real_reg[7:0]' into 'location_112/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_111/temp_imag_reg[7:0]' into 'location_111/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_111/temp_real_reg[7:0]' into 'location_111/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_111/temp_real_reg[7:0]' into 'location_111/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_110/temp_imag_reg[7:0]' into 'location_110/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_110/temp_real_reg[7:0]' into 'location_110/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_110/temp_real_reg[7:0]' into 'location_110/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_109/temp_imag_reg[7:0]' into 'location_109/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_109/temp_real_reg[7:0]' into 'location_109/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_109/temp_real_reg[7:0]' into 'location_109/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_108/temp_imag_reg[7:0]' into 'location_108/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_108/temp_real_reg[7:0]' into 'location_108/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_108/temp_real_reg[7:0]' into 'location_108/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_107/temp_imag_reg[7:0]' into 'location_107/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_107/temp_real_reg[7:0]' into 'location_107/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_107/temp_real_reg[7:0]' into 'location_107/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_106/temp_imag_reg[7:0]' into 'location_106/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_106/temp_real_reg[7:0]' into 'location_106/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_106/temp_real_reg[7:0]' into 'location_106/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_105/temp_imag_reg[7:0]' into 'location_105/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_105/temp_real_reg[7:0]' into 'location_105/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_105/temp_real_reg[7:0]' into 'location_105/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_24/temp_imag_reg[7:0]' into 'location_24/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_24/temp_real_reg[7:0]' into 'location_24/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_24/temp_real_reg[7:0]' into 'location_24/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_25/temp_imag_reg[7:0]' into 'location_25/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_25/temp_real_reg[7:0]' into 'location_25/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_25/temp_real_reg[7:0]' into 'location_25/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_26/temp_imag_reg[7:0]' into 'location_26/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_26/temp_real_reg[7:0]' into 'location_26/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_26/temp_real_reg[7:0]' into 'location_26/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_27/temp_imag_reg[7:0]' into 'location_27/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_27/temp_real_reg[7:0]' into 'location_27/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_27/temp_real_reg[7:0]' into 'location_27/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_28/temp_imag_reg[7:0]' into 'location_28/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_28/temp_real_reg[7:0]' into 'location_28/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_28/temp_real_reg[7:0]' into 'location_28/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_29/temp_imag_reg[7:0]' into 'location_29/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_29/temp_real_reg[7:0]' into 'location_29/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_29/temp_real_reg[7:0]' into 'location_29/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_30/temp_imag_reg[7:0]' into 'location_30/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_30/temp_real_reg[7:0]' into 'location_30/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_30/temp_real_reg[7:0]' into 'location_30/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_31/temp_imag_reg[7:0]' into 'location_31/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
-INFO: [Synth 8-4471] merging register 'location_31/temp_real_reg[7:0]' into 'location_31/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_31/temp_real_reg[7:0]' into 'location_31/temp_real_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
-INFO: [Synth 8-4471] merging register 'location_32/temp_imag_reg[7:0]' into 'location_32/temp_imag_reg[7:0]' [D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_129/temp_imag_reg[7:0]' into 'location_129/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_129/temp_real_reg[7:0]' into 'location_129/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_129/temp_real_reg[7:0]' into 'location_129/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_128/temp_imag_reg[7:0]' into 'location_128/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_128/temp_real_reg[7:0]' into 'location_128/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_128/temp_real_reg[7:0]' into 'location_128/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_127/temp_imag_reg[7:0]' into 'location_127/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_127/temp_real_reg[7:0]' into 'location_127/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_127/temp_real_reg[7:0]' into 'location_127/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_126/temp_imag_reg[7:0]' into 'location_126/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_126/temp_real_reg[7:0]' into 'location_126/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_126/temp_real_reg[7:0]' into 'location_126/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_125/temp_imag_reg[7:0]' into 'location_125/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_125/temp_real_reg[7:0]' into 'location_125/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_125/temp_real_reg[7:0]' into 'location_125/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_124/temp_imag_reg[7:0]' into 'location_124/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_124/temp_real_reg[7:0]' into 'location_124/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_124/temp_real_reg[7:0]' into 'location_124/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_123/temp_imag_reg[7:0]' into 'location_123/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_123/temp_real_reg[7:0]' into 'location_123/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_123/temp_real_reg[7:0]' into 'location_123/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_122/temp_imag_reg[7:0]' into 'location_122/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_122/temp_real_reg[7:0]' into 'location_122/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_122/temp_real_reg[7:0]' into 'location_122/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_121/temp_imag_reg[7:0]' into 'location_121/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_121/temp_real_reg[7:0]' into 'location_121/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_121/temp_real_reg[7:0]' into 'location_121/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_120/temp_imag_reg[7:0]' into 'location_120/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_120/temp_real_reg[7:0]' into 'location_120/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_120/temp_real_reg[7:0]' into 'location_120/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_119/temp_imag_reg[7:0]' into 'location_119/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_119/temp_real_reg[7:0]' into 'location_119/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_119/temp_real_reg[7:0]' into 'location_119/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_118/temp_imag_reg[7:0]' into 'location_118/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_118/temp_real_reg[7:0]' into 'location_118/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_118/temp_real_reg[7:0]' into 'location_118/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_117/temp_imag_reg[7:0]' into 'location_117/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_117/temp_real_reg[7:0]' into 'location_117/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_117/temp_real_reg[7:0]' into 'location_117/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_116/temp_imag_reg[7:0]' into 'location_116/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_116/temp_real_reg[7:0]' into 'location_116/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_116/temp_real_reg[7:0]' into 'location_116/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_115/temp_imag_reg[7:0]' into 'location_115/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_115/temp_real_reg[7:0]' into 'location_115/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_115/temp_real_reg[7:0]' into 'location_115/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_114/temp_imag_reg[7:0]' into 'location_114/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_114/temp_real_reg[7:0]' into 'location_114/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_114/temp_real_reg[7:0]' into 'location_114/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_113/temp_imag_reg[7:0]' into 'location_113/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_113/temp_real_reg[7:0]' into 'location_113/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_113/temp_real_reg[7:0]' into 'location_113/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_112/temp_imag_reg[7:0]' into 'location_112/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_112/temp_real_reg[7:0]' into 'location_112/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_112/temp_real_reg[7:0]' into 'location_112/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_111/temp_imag_reg[7:0]' into 'location_111/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_111/temp_real_reg[7:0]' into 'location_111/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_111/temp_real_reg[7:0]' into 'location_111/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_110/temp_imag_reg[7:0]' into 'location_110/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_110/temp_real_reg[7:0]' into 'location_110/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_110/temp_real_reg[7:0]' into 'location_110/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_109/temp_imag_reg[7:0]' into 'location_109/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_109/temp_real_reg[7:0]' into 'location_109/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_109/temp_real_reg[7:0]' into 'location_109/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_108/temp_imag_reg[7:0]' into 'location_108/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_108/temp_real_reg[7:0]' into 'location_108/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_108/temp_real_reg[7:0]' into 'location_108/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_107/temp_imag_reg[7:0]' into 'location_107/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_107/temp_real_reg[7:0]' into 'location_107/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_107/temp_real_reg[7:0]' into 'location_107/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_106/temp_imag_reg[7:0]' into 'location_106/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_106/temp_real_reg[7:0]' into 'location_106/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_106/temp_real_reg[7:0]' into 'location_106/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_105/temp_imag_reg[7:0]' into 'location_105/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_105/temp_real_reg[7:0]' into 'location_105/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_105/temp_real_reg[7:0]' into 'location_105/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_24/temp_imag_reg[7:0]' into 'location_24/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_24/temp_real_reg[7:0]' into 'location_24/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_24/temp_real_reg[7:0]' into 'location_24/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_25/temp_imag_reg[7:0]' into 'location_25/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_25/temp_real_reg[7:0]' into 'location_25/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_25/temp_real_reg[7:0]' into 'location_25/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_26/temp_imag_reg[7:0]' into 'location_26/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_26/temp_real_reg[7:0]' into 'location_26/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_26/temp_real_reg[7:0]' into 'location_26/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_27/temp_imag_reg[7:0]' into 'location_27/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_27/temp_real_reg[7:0]' into 'location_27/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_27/temp_real_reg[7:0]' into 'location_27/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_28/temp_imag_reg[7:0]' into 'location_28/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_28/temp_real_reg[7:0]' into 'location_28/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_28/temp_real_reg[7:0]' into 'location_28/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_29/temp_imag_reg[7:0]' into 'location_29/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_29/temp_real_reg[7:0]' into 'location_29/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_29/temp_real_reg[7:0]' into 'location_29/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_30/temp_imag_reg[7:0]' into 'location_30/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_30/temp_real_reg[7:0]' into 'location_30/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_30/temp_real_reg[7:0]' into 'location_30/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_31/temp_imag_reg[7:0]' into 'location_31/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
+INFO: [Synth 8-4471] merging register 'location_31/temp_real_reg[7:0]' into 'location_31/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_31/temp_real_reg[7:0]' into 'location_31/temp_real_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:59]
+INFO: [Synth 8-4471] merging register 'location_32/temp_imag_reg[7:0]' into 'location_32/temp_imag_reg[7:0]' [C:/Users/kaveh/Documents/Extended Essay/GitHub/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.srcs/sources_1/new/Single_Location.v:60]
 INFO: [Common 17-14] Message 'Synth 8-4471' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 DSP Report: Generating DSP location_129/adder/multiplier/realOut, operation Mode is (post resource management): C+A2*B2+1.
 DSP Report: register location_129/temp_real_reg is absorbed into DSP location_129/adder/multiplier/realOut.
@@ -11103,17 +11103,17 @@ INFO: [Synth 8-3886] merging instance 'i_0/\location_92/temp_real_reg[4]__0 ' (F
 INFO: [Synth 8-3886] merging instance 'i_0/\location_92/temp_real_reg[5]__0 ' (FDE) to 'i_0/\location_92/temp_real_reg[5] '
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:03:39 ; elapsed = 00:03:46 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Area Optimization : Time (s): cpu = 00:05:30 ; elapsed = 00:05:41 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:03:39 ; elapsed = 00:03:46 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Parallel Area Optimization  : Time (s): cpu = 00:05:30 ; elapsed = 00:05:41 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 
 Report RTL Partitions: 
 +------+----------------+------------+----------+
 |      |RTL Partition   |Replication |Instances |
 +------+----------------+------------+----------+
 |1     |Test_Block__GB0 |           1|     30330|
-|2     |Test_Block__GB1 |           1|     16603|
-|3     |Test_Block__GB2 |           1|     16170|
+|2     |Test_Block__GB1 |           1|     16213|
+|3     |Test_Block__GB2 |           1|     16167|
 |4     |Test_Block__GB3 |           1|     16094|
 +------+----------------+------------+----------+
 ---------------------------------------------------------------------------------
@@ -11123,35 +11123,35 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:51 ; elapsed = 00:03:59 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:47 ; elapsed = 00:05:58 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:03:55 ; elapsed = 00:04:03 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Timing Optimization : Time (s): cpu = 00:05:52 ; elapsed = 00:06:03 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
+Finished Parallel Timing Optimization  : Time (s): cpu = 00:05:52 ; elapsed = 00:06:03 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 
 Report RTL Partitions: 
 +------+----------------+------------+----------+
 |      |RTL Partition   |Replication |Instances |
 +------+----------------+------------+----------+
 |1     |Test_Block__GB0 |           1|     30330|
-|2     |Test_Block__GB1 |           1|     16603|
-|3     |Test_Block__GB2 |           1|     16170|
+|2     |Test_Block__GB1 |           1|     16213|
+|3     |Test_Block__GB2 |           1|     16167|
 |4     |Test_Block__GB3 |           1|     16094|
 +------+----------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:05:52 ; elapsed = 00:06:03 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:04:10 ; elapsed = 00:04:17 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Technology Mapping : Time (s): cpu = 00:06:10 ; elapsed = 00:06:21 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:04:10 ; elapsed = 00:04:17 . Memory (MB): peak = 1222.645 ; gain = 1051.348
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:04:10 ; elapsed = 00:04:17 . Memory (MB): peak = 1222.645 ; gain = 1051.348
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -11168,7 +11168,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:04:13 ; elapsed = 00:04:20 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished IO Insertion : Time (s): cpu = 00:06:14 ; elapsed = 00:06:25 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -11181,7 +11181,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:04:13 ; elapsed = 00:04:21 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:15 ; elapsed = 00:06:26 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -11193,25 +11193,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:17 ; elapsed = 00:04:24 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:20 ; elapsed = 00:06:31 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:04:17 ; elapsed = 00:04:25 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:20 ; elapsed = 00:06:32 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:04:17 ; elapsed = 00:04:25 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:21 ; elapsed = 00:06:32 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:04:17 ; elapsed = 00:04:25 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:21 ; elapsed = 00:06:32 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -11228,9 +11228,9 @@ Report Cell Usage:
 |      |Cell    |Count |
 +------+--------+------+
 |1     |BUFG    |     2|
-|2     |CARRY4  |  4765|
+|2     |CARRY4  |  4764|
 |3     |DSP48E1 |    45|
-|4     |LUT1    |   939|
+|4     |LUT1    |   932|
 |5     |LUT2    | 12534|
 |6     |LUT3    |  4268|
 |7     |LUT4    |  2918|
@@ -11238,7 +11238,7 @@ Report Cell Usage:
 |9     |LUT6    |  4915|
 |10    |MUXF7   |   272|
 |11    |MUXF8   |   136|
-|12    |FDRE    |  6612|
+|12    |FDRE    |  6605|
 |13    |FDSE    |  1372|
 |14    |LD      |  1024|
 |15    |IBUF    |    11|
@@ -11249,7 +11249,7 @@ Report Instance Areas:
 +------+-----------------+----------------------+------+
 |      |Instance         |Module                |Cells |
 +------+-----------------+----------------------+------+
-|1     |top              |                      | 42346|
+|1     |top              |                      | 42331|
 |2     |  location_0     |Single_Location       |   134|
 |3     |    adder        |Complex_add_1020      |    52|
 |4     |      multiplier |Complex_Multiply_1022 |    40|
@@ -12278,16 +12278,16 @@ Report Instance Areas:
 |1027  |    compare      |Comparator            |    15|
 |1028  |    adder        |Complex_add           |    42|
 |1029  |      multiplier |Complex_Multiply      |    14|
-|1030  |  newClock       |Clock_Divide          |    42|
+|1030  |  newClock       |Clock_Divide          |    37|
 +------+-----------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:04:17 ; elapsed = 00:04:25 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:21 ; elapsed = 00:06:33 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:04:07 ; elapsed = 00:04:17 . Memory (MB): peak = 1222.645 ; gain = 702.969
-Synthesis Optimization Complete : Time (s): cpu = 00:04:18 ; elapsed = 00:04:25 . Memory (MB): peak = 1222.645 ; gain = 1051.348
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:07 ; elapsed = 00:06:23 . Memory (MB): peak = 1218.527 ; gain = 703.836
+Synthesis Optimization Complete : Time (s): cpu = 00:06:21 ; elapsed = 00:06:33 . Memory (MB): peak = 1218.527 ; gain = 1048.094
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 5845 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 5844 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -12298,7 +12298,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 233 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:04:26 ; elapsed = 00:04:33 . Memory (MB): peak = 1222.645 ; gain = 1035.508
-write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1222.645 ; gain = 0.000
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.214 . Memory (MB): peak = 1222.645 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 22 21:45:58 2016...
+synth_design: Time (s): cpu = 00:06:33 ; elapsed = 00:06:45 . Memory (MB): peak = 1218.527 ; gain = 1031.371
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 1218.527 ; gain = 0.000
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.375 . Memory (MB): peak = 1218.527 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Feb 16 01:32:29 2016...
