@@ -21,17 +21,23 @@
 
 
 module Clock_Divide(
-    input clockIn,
+    //clock in
+    input clock,
+    //clock out (no shit)
     output reg clockOut
+    
+
     );
     //implementation
-    reg [24:0] clockDivide;
+    reg [17:0] clockDivide;
     
-    always @(posedge clockIn)
+    always @(posedge clock)
     begin
         clockDivide <= (clockDivide+1);
-        clockOut <= clockDivide[24];
+        clockOut <= clockDivide[17];
     end
+    
+
     
     
 endmodule

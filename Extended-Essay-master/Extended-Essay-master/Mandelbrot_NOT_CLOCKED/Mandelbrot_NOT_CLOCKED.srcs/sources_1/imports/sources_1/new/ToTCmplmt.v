@@ -25,6 +25,6 @@ module ToTCmplmt(
     output [7:0] out
     );
     //implementation
-    assign out = (~in+1);
+    assign out = (~in+1'b1);
     
 endmodule

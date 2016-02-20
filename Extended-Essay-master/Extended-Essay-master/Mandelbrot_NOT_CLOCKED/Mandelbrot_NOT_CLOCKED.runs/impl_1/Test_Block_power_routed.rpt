@@ -1,0 +1,658 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date             : Sat Feb 20 23:48:18 2016
+| Host             : Kaveh_Bardia_PC running 64-bit major release  (build 9200)
+| Command          : report_power -file Test_Block_power_routed.rpt -pb Test_Block_power_summary_routed.pb
+| Design           : Test_Block
+| Device           : xc7a35tcpg236-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-------+
+| Total On-Chip Power (W)  | 0.124 |
+| Dynamic (W)              | 0.053 |
+| Device Static (W)        | 0.072 |
+| Effective TJA (C/W)      | 5.0   |
+| Max Ambient (C)          | 84.4  |
+| Junction Temperature (C) | 25.6  |
+| Confidence Level         | Low   |
+| Setting File             | ---   |
+| Simulation Activity File | ---   |
+| Design Nets Matched      | NA    |
++--------------------------+-------+
+
+
+1.1 On-Chip Components
+----------------------
+
++----------------+-----------+----------+-----------+-----------------+
+| On-Chip        | Power (W) | Used     | Available | Utilization (%) |
++----------------+-----------+----------+-----------+-----------------+
+| Clocks         |    <0.001 |        3 |       --- |             --- |
+| Slice Logic    |     0.022 |     7973 |       --- |             --- |
+|   LUT as Logic |     0.019 |     2103 |     20800 |           10.11 |
+|   Register     |     0.002 |     4160 |     41600 |           10.00 |
+|   F7/F8 Muxes  |    <0.001 |      408 |     32600 |            1.25 |
+|   CARRY4       |    <0.001 |        5 |      8150 |            0.06 |
+|   BUFG         |    <0.001 |        1 |        32 |            3.13 |
+|   Others       |     0.000 |      516 |       --- |             --- |
+| Signals        |     0.019 |     4557 |       --- |             --- |
+| I/O            |     0.012 |       27 |       106 |           25.47 |
+| Static Power   |     0.072 |          |           |                 |
+| Total          |     0.124 |          |           |                 |
++----------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.050 |       0.041 |      0.010 |
+| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
+| Vcco33    |       3.300 |     0.004 |       0.003 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 5.0                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------------+---------+-----------------+
+| Clock       | Domain  | Constraint (ns) |
++-------------+---------+-----------------+
+| sys_clk_pin | clockIn |            10.0 |
++-------------+---------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++----------------+-----------+
+| Name           | Power (W) |
++----------------+-----------+
+| Test_Block     |     0.053 |
+|   location_0   |    <0.001 |
+|     count      |    <0.001 |
+|   location_1   |    <0.001 |
+|     count      |    <0.001 |
+|   location_10  |    <0.001 |
+|     count      |    <0.001 |
+|   location_100 |    <0.001 |
+|     count      |    <0.001 |
+|   location_101 |    <0.001 |
+|     count      |    <0.001 |
+|   location_102 |    <0.001 |
+|     count      |    <0.001 |
+|   location_103 |    <0.001 |
+|     count      |    <0.001 |
+|   location_104 |    <0.001 |
+|     count      |    <0.001 |
+|   location_105 |    <0.001 |
+|     count      |    <0.001 |
+|   location_106 |    <0.001 |
+|     count      |    <0.001 |
+|   location_107 |    <0.001 |
+|     count      |    <0.001 |
+|   location_108 |    <0.001 |
+|     count      |    <0.001 |
+|   location_109 |    <0.001 |
+|     count      |    <0.001 |
+|   location_11  |    <0.001 |
+|     count      |    <0.001 |
+|   location_110 |    <0.001 |
+|     count      |    <0.001 |
+|   location_111 |    <0.001 |
+|     count      |    <0.001 |
+|   location_112 |    <0.001 |
+|     count      |    <0.001 |
+|   location_113 |    <0.001 |
+|     count      |    <0.001 |
+|   location_114 |    <0.001 |
+|     count      |    <0.001 |
+|   location_115 |    <0.001 |
+|     count      |    <0.001 |
+|   location_116 |    <0.001 |
+|     count      |    <0.001 |
+|   location_117 |    <0.001 |
+|     count      |    <0.001 |
+|   location_118 |    <0.001 |
+|     count      |    <0.001 |
+|   location_119 |    <0.001 |
+|     count      |    <0.001 |
+|   location_12  |    <0.001 |
+|     count      |    <0.001 |
+|   location_120 |    <0.001 |
+|     count      |    <0.001 |
+|   location_121 |    <0.001 |
+|     count      |    <0.001 |
+|   location_122 |    <0.001 |
+|     count      |    <0.001 |
+|   location_123 |    <0.001 |
+|     count      |    <0.001 |
+|   location_124 |    <0.001 |
+|     count      |    <0.001 |
+|   location_125 |    <0.001 |
+|     count      |    <0.001 |
+|   location_126 |    <0.001 |
+|     count      |    <0.001 |
+|   location_127 |    <0.001 |
+|     count      |    <0.001 |
+|   location_128 |    <0.001 |
+|     count      |    <0.001 |
+|   location_129 |    <0.001 |
+|     count      |    <0.001 |
+|   location_13  |    <0.001 |
+|     count      |    <0.001 |
+|   location_130 |    <0.001 |
+|     count      |    <0.001 |
+|   location_131 |    <0.001 |
+|     count      |    <0.001 |
+|   location_132 |    <0.001 |
+|     count      |    <0.001 |
+|   location_133 |    <0.001 |
+|     count      |    <0.001 |
+|   location_134 |    <0.001 |
+|     count      |    <0.001 |
+|   location_135 |    <0.001 |
+|     count      |    <0.001 |
+|   location_136 |    <0.001 |
+|     count      |    <0.001 |
+|   location_137 |    <0.001 |
+|     count      |    <0.001 |
+|   location_138 |    <0.001 |
+|     count      |    <0.001 |
+|   location_139 |    <0.001 |
+|     count      |    <0.001 |
+|   location_14  |    <0.001 |
+|     count      |    <0.001 |
+|   location_140 |    <0.001 |
+|     count      |    <0.001 |
+|   location_141 |    <0.001 |
+|     count      |    <0.001 |
+|   location_142 |    <0.001 |
+|     count      |    <0.001 |
+|   location_143 |    <0.001 |
+|     count      |    <0.001 |
+|   location_144 |    <0.001 |
+|     count      |    <0.001 |
+|   location_145 |    <0.001 |
+|     count      |    <0.001 |
+|   location_146 |    <0.001 |
+|     count      |    <0.001 |
+|   location_147 |    <0.001 |
+|     count      |    <0.001 |
+|   location_148 |    <0.001 |
+|     count      |    <0.001 |
+|   location_149 |    <0.001 |
+|     count      |    <0.001 |
+|   location_15  |    <0.001 |
+|     count      |    <0.001 |
+|   location_150 |    <0.001 |
+|     count      |    <0.001 |
+|   location_151 |    <0.001 |
+|     count      |    <0.001 |
+|   location_152 |    <0.001 |
+|     count      |    <0.001 |
+|   location_153 |    <0.001 |
+|     count      |    <0.001 |
+|   location_154 |    <0.001 |
+|     count      |    <0.001 |
+|   location_155 |    <0.001 |
+|     count      |    <0.001 |
+|   location_156 |    <0.001 |
+|     count      |    <0.001 |
+|   location_157 |    <0.001 |
+|     count      |    <0.001 |
+|   location_158 |    <0.001 |
+|     count      |    <0.001 |
+|   location_159 |    <0.001 |
+|     count      |    <0.001 |
+|   location_16  |    <0.001 |
+|     count      |    <0.001 |
+|   location_160 |    <0.001 |
+|     count      |    <0.001 |
+|   location_161 |    <0.001 |
+|     count      |    <0.001 |
+|   location_162 |    <0.001 |
+|     count      |    <0.001 |
+|   location_163 |    <0.001 |
+|     count      |    <0.001 |
+|   location_164 |    <0.001 |
+|     count      |    <0.001 |
+|   location_165 |    <0.001 |
+|     count      |    <0.001 |
+|   location_166 |    <0.001 |
+|     count      |    <0.001 |
+|   location_167 |    <0.001 |
+|     count      |    <0.001 |
+|   location_168 |    <0.001 |
+|     count      |    <0.001 |
+|   location_169 |    <0.001 |
+|     count      |    <0.001 |
+|   location_17  |    <0.001 |
+|     count      |    <0.001 |
+|   location_170 |    <0.001 |
+|     count      |    <0.001 |
+|   location_171 |    <0.001 |
+|     count      |    <0.001 |
+|   location_172 |    <0.001 |
+|     count      |    <0.001 |
+|   location_173 |    <0.001 |
+|     count      |    <0.001 |
+|   location_174 |    <0.001 |
+|     count      |    <0.001 |
+|   location_175 |    <0.001 |
+|     count      |    <0.001 |
+|   location_176 |    <0.001 |
+|     count      |    <0.001 |
+|   location_177 |    <0.001 |
+|     count      |    <0.001 |
+|   location_178 |    <0.001 |
+|     count      |    <0.001 |
+|   location_179 |    <0.001 |
+|     count      |    <0.001 |
+|   location_18  |    <0.001 |
+|     count      |    <0.001 |
+|   location_180 |    <0.001 |
+|     count      |    <0.001 |
+|   location_181 |    <0.001 |
+|     count      |    <0.001 |
+|   location_182 |    <0.001 |
+|     count      |    <0.001 |
+|   location_183 |    <0.001 |
+|     count      |    <0.001 |
+|   location_184 |    <0.001 |
+|     count      |    <0.001 |
+|   location_185 |    <0.001 |
+|     count      |    <0.001 |
+|   location_186 |    <0.001 |
+|     count      |    <0.001 |
+|   location_187 |    <0.001 |
+|     count      |    <0.001 |
+|   location_188 |    <0.001 |
+|     count      |    <0.001 |
+|   location_189 |    <0.001 |
+|     count      |    <0.001 |
+|   location_19  |    <0.001 |
+|     count      |    <0.001 |
+|   location_190 |    <0.001 |
+|     count      |    <0.001 |
+|   location_191 |    <0.001 |
+|     count      |    <0.001 |
+|   location_192 |    <0.001 |
+|     count      |    <0.001 |
+|   location_193 |    <0.001 |
+|     count      |    <0.001 |
+|   location_194 |    <0.001 |
+|     count      |    <0.001 |
+|   location_195 |    <0.001 |
+|     count      |    <0.001 |
+|   location_196 |    <0.001 |
+|     count      |    <0.001 |
+|   location_197 |    <0.001 |
+|     count      |    <0.001 |
+|   location_198 |    <0.001 |
+|     count      |    <0.001 |
+|   location_199 |    <0.001 |
+|     count      |    <0.001 |
+|   location_2   |    <0.001 |
+|     count      |    <0.001 |
+|   location_20  |    <0.001 |
+|     count      |    <0.001 |
+|   location_200 |    <0.001 |
+|     count      |    <0.001 |
+|   location_201 |    <0.001 |
+|     count      |    <0.001 |
+|   location_202 |    <0.001 |
+|     count      |    <0.001 |
+|   location_203 |    <0.001 |
+|     count      |    <0.001 |
+|   location_204 |    <0.001 |
+|     count      |    <0.001 |
+|   location_205 |    <0.001 |
+|     count      |    <0.001 |
+|   location_206 |    <0.001 |
+|     count      |    <0.001 |
+|   location_207 |    <0.001 |
+|     count      |    <0.001 |
+|   location_208 |    <0.001 |
+|     count      |    <0.001 |
+|   location_209 |    <0.001 |
+|     count      |    <0.001 |
+|   location_21  |    <0.001 |
+|     count      |    <0.001 |
+|   location_210 |    <0.001 |
+|     count      |    <0.001 |
+|   location_211 |    <0.001 |
+|     count      |    <0.001 |
+|   location_212 |    <0.001 |
+|     count      |    <0.001 |
+|   location_213 |    <0.001 |
+|     count      |    <0.001 |
+|   location_214 |    <0.001 |
+|     count      |    <0.001 |
+|   location_215 |    <0.001 |
+|     count      |    <0.001 |
+|   location_216 |    <0.001 |
+|     count      |    <0.001 |
+|   location_217 |    <0.001 |
+|     count      |    <0.001 |
+|   location_218 |    <0.001 |
+|     count      |    <0.001 |
+|   location_219 |    <0.001 |
+|     count      |    <0.001 |
+|   location_22  |    <0.001 |
+|     count      |    <0.001 |
+|   location_220 |    <0.001 |
+|     count      |    <0.001 |
+|   location_221 |    <0.001 |
+|     count      |    <0.001 |
+|   location_222 |    <0.001 |
+|     count      |    <0.001 |
+|   location_223 |    <0.001 |
+|     count      |    <0.001 |
+|   location_224 |    <0.001 |
+|     count      |    <0.001 |
+|   location_225 |    <0.001 |
+|     count      |    <0.001 |
+|   location_226 |    <0.001 |
+|     count      |    <0.001 |
+|   location_227 |    <0.001 |
+|     count      |    <0.001 |
+|   location_228 |    <0.001 |
+|     count      |    <0.001 |
+|   location_229 |    <0.001 |
+|     count      |    <0.001 |
+|   location_23  |    <0.001 |
+|     count      |    <0.001 |
+|   location_230 |    <0.001 |
+|     count      |    <0.001 |
+|   location_231 |    <0.001 |
+|     count      |    <0.001 |
+|   location_232 |    <0.001 |
+|     count      |    <0.001 |
+|   location_233 |    <0.001 |
+|     count      |    <0.001 |
+|   location_234 |    <0.001 |
+|     count      |    <0.001 |
+|   location_235 |    <0.001 |
+|     count      |    <0.001 |
+|   location_236 |    <0.001 |
+|     count      |    <0.001 |
+|   location_237 |    <0.001 |
+|     count      |    <0.001 |
+|   location_238 |    <0.001 |
+|     count      |    <0.001 |
+|   location_239 |    <0.001 |
+|     count      |    <0.001 |
+|   location_24  |    <0.001 |
+|     count      |    <0.001 |
+|   location_240 |    <0.001 |
+|     count      |    <0.001 |
+|   location_241 |    <0.001 |
+|     count      |    <0.001 |
+|   location_242 |    <0.001 |
+|     count      |    <0.001 |
+|   location_243 |    <0.001 |
+|     count      |    <0.001 |
+|   location_244 |    <0.001 |
+|     count      |    <0.001 |
+|   location_245 |    <0.001 |
+|     count      |    <0.001 |
+|   location_246 |    <0.001 |
+|     count      |    <0.001 |
+|   location_247 |    <0.001 |
+|     count      |    <0.001 |
+|   location_248 |    <0.001 |
+|     count      |    <0.001 |
+|   location_249 |    <0.001 |
+|     count      |    <0.001 |
+|   location_25  |    <0.001 |
+|     count      |    <0.001 |
+|   location_250 |    <0.001 |
+|     count      |    <0.001 |
+|   location_251 |    <0.001 |
+|     count      |    <0.001 |
+|   location_252 |    <0.001 |
+|     count      |    <0.001 |
+|   location_253 |    <0.001 |
+|     count      |    <0.001 |
+|   location_254 |    <0.001 |
+|     count      |    <0.001 |
+|   location_255 |    <0.001 |
+|     count      |    <0.001 |
+|   location_26  |    <0.001 |
+|     count      |    <0.001 |
+|   location_27  |    <0.001 |
+|     count      |    <0.001 |
+|   location_28  |    <0.001 |
+|     count      |    <0.001 |
+|   location_29  |    <0.001 |
+|     count      |    <0.001 |
+|   location_3   |    <0.001 |
+|     count      |    <0.001 |
+|   location_30  |    <0.001 |
+|     count      |    <0.001 |
+|   location_31  |    <0.001 |
+|     count      |    <0.001 |
+|   location_32  |    <0.001 |
+|     count      |    <0.001 |
+|   location_33  |    <0.001 |
+|     count      |    <0.001 |
+|   location_34  |    <0.001 |
+|     count      |    <0.001 |
+|   location_35  |    <0.001 |
+|     count      |    <0.001 |
+|   location_36  |    <0.001 |
+|     count      |    <0.001 |
+|   location_37  |    <0.001 |
+|     count      |    <0.001 |
+|   location_38  |    <0.001 |
+|     count      |    <0.001 |
+|   location_39  |    <0.001 |
+|     count      |    <0.001 |
+|   location_4   |    <0.001 |
+|     count      |    <0.001 |
+|   location_40  |    <0.001 |
+|     count      |    <0.001 |
+|   location_41  |    <0.001 |
+|     count      |    <0.001 |
+|   location_42  |    <0.001 |
+|     count      |    <0.001 |
+|   location_43  |    <0.001 |
+|     count      |    <0.001 |
+|   location_44  |    <0.001 |
+|     count      |    <0.001 |
+|   location_45  |    <0.001 |
+|     count      |    <0.001 |
+|   location_46  |    <0.001 |
+|     count      |    <0.001 |
+|   location_47  |    <0.001 |
+|     count      |    <0.001 |
+|   location_48  |    <0.001 |
+|     count      |    <0.001 |
+|   location_49  |    <0.001 |
+|     count      |    <0.001 |
+|   location_5   |    <0.001 |
+|     count      |    <0.001 |
+|   location_50  |    <0.001 |
+|     count      |    <0.001 |
+|   location_51  |    <0.001 |
+|     count      |    <0.001 |
+|   location_52  |    <0.001 |
+|     count      |    <0.001 |
+|   location_53  |    <0.001 |
+|     count      |    <0.001 |
+|   location_54  |    <0.001 |
+|     count      |    <0.001 |
+|   location_55  |    <0.001 |
+|     count      |    <0.001 |
+|   location_56  |    <0.001 |
+|     count      |    <0.001 |
+|   location_57  |    <0.001 |
+|     count      |    <0.001 |
+|   location_58  |    <0.001 |
+|     count      |    <0.001 |
+|   location_59  |    <0.001 |
+|     count      |    <0.001 |
+|   location_6   |    <0.001 |
+|     count      |    <0.001 |
+|   location_60  |    <0.001 |
+|     count      |    <0.001 |
+|   location_61  |    <0.001 |
+|     count      |    <0.001 |
+|   location_62  |    <0.001 |
+|     count      |    <0.001 |
+|   location_63  |    <0.001 |
+|     count      |    <0.001 |
+|   location_64  |    <0.001 |
+|     count      |    <0.001 |
+|   location_65  |    <0.001 |
+|     count      |    <0.001 |
+|   location_66  |    <0.001 |
+|     count      |    <0.001 |
+|   location_67  |    <0.001 |
+|     count      |    <0.001 |
+|   location_68  |    <0.001 |
+|     count      |    <0.001 |
+|   location_69  |    <0.001 |
+|     count      |    <0.001 |
+|   location_7   |    <0.001 |
+|     count      |    <0.001 |
+|   location_70  |    <0.001 |
+|     count      |    <0.001 |
+|   location_71  |    <0.001 |
+|     count      |    <0.001 |
+|   location_72  |    <0.001 |
+|     count      |    <0.001 |
+|   location_73  |    <0.001 |
+|     count      |    <0.001 |
+|   location_74  |    <0.001 |
+|     count      |    <0.001 |
+|   location_75  |    <0.001 |
+|     count      |    <0.001 |
+|   location_76  |    <0.001 |
+|     count      |    <0.001 |
+|   location_77  |    <0.001 |
+|     count      |    <0.001 |
+|   location_78  |    <0.001 |
+|     count      |    <0.001 |
+|   location_79  |    <0.001 |
+|     count      |    <0.001 |
+|   location_8   |    <0.001 |
+|     count      |    <0.001 |
+|   location_80  |    <0.001 |
+|     count      |    <0.001 |
+|   location_81  |    <0.001 |
+|     count      |    <0.001 |
+|   location_82  |    <0.001 |
+|     count      |    <0.001 |
+|   location_83  |    <0.001 |
+|     count      |    <0.001 |
+|   location_84  |    <0.001 |
+|     count      |    <0.001 |
+|   location_85  |    <0.001 |
+|     count      |    <0.001 |
+|   location_86  |    <0.001 |
+|     count      |    <0.001 |
+|   location_87  |    <0.001 |
+|     count      |    <0.001 |
+|   location_88  |    <0.001 |
+|     count      |    <0.001 |
+|   location_89  |    <0.001 |
+|     count      |    <0.001 |
+|   location_9   |    <0.001 |
+|     count      |    <0.001 |
+|   location_90  |    <0.001 |
+|     count      |    <0.001 |
+|   location_91  |    <0.001 |
+|     count      |    <0.001 |
+|   location_92  |    <0.001 |
+|     count      |    <0.001 |
+|   location_93  |    <0.001 |
+|     count      |    <0.001 |
+|   location_94  |    <0.001 |
+|     count      |    <0.001 |
+|   location_95  |    <0.001 |
+|     count      |    <0.001 |
+|   location_96  |    <0.001 |
+|     count      |    <0.001 |
+|   location_97  |    <0.001 |
+|     count      |    <0.001 |
+|   location_98  |    <0.001 |
+|     count      |    <0.001 |
+|   location_99  |    <0.001 |
+|     count      |    <0.001 |
+|   newClock     |    <0.001 |
++----------------+-----------+
+
+

@@ -26,6 +26,7 @@ module Multiplier(
     output [7:0] out
     );
     //implementation
-    assign out = (~(in1*in2)+1);
+    wire [14:0] temp_out = in1*in2;
+    assign out = temp_out[7:0];
       
 endmodule

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1455394101">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1456011978">
   <File Type="RDS-DCP" Name="Test_Block.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="Test_Block_utilization_synth.pb"/>
@@ -26,15 +26,6 @@
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/new/Multiplier.v"/>
         <Attr Name="ImportTime" Val="1449748318"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/Adder.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/imports/new/Adder.v"/>
-        <Attr Name="ImportTime" Val="1449581473"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -76,6 +67,15 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Clock_Divide.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/new/Clock_Divide.v"/>
+        <Attr Name="ImportTime" Val="1449841766"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/Single_Location.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../Mandelbrot/Mandelbrot.srcs/sources_1/new/Single_Location.v"/>
@@ -92,11 +92,11 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Clock_Divide.v">
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/Adder.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/new/Clock_Divide.v"/>
-        <Attr Name="ImportTime" Val="1449841766"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/imports/new/Adder.v"/>
+        <Attr Name="ImportTime" Val="1449581473"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -134,6 +134,8 @@
   </FileSet>
   <Strategy Version="1" Minor="2">
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2015"/>
-    <Step Id="synth_design"/>
+    <Step Id="synth_design">
+      <Option Id="KeepEquivalentRegisters">1</Option>
+    </Step>
   </Strategy>
 </GenRun>

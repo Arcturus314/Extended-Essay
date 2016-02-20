@@ -23,8 +23,6 @@
 module Complex_Multiply(
     input [7:0] realIn,
     input [7:0] imagIn,
-    input enable,
-    input clk,
     output [7:0] realOut,
     output [7:0] imagOut
     );
@@ -33,6 +31,11 @@ module Complex_Multiply(
     wire [7:0] real_sq_out;   
     wire [7:0] imag_sq_out;
     wire [7:0] imag_sq_invert;
+    
+    //finding a^2-b^2
+    assign realOut = real_sq_out + imag_sq_invert;
+    //finding 2bi
+    assign imagOut = imagIn + imagIn;
     
     //module instantiations
     Multiplier real_sq
@@ -49,25 +52,12 @@ module Complex_Multiply(
         .out (imag_sq_out)
     );
     
-    Adder double_imag
-    (
-        .in1 (imagIn),
-        .in2 (imagIn),
-        .out (imagOut)
-    );
-    
     ToTCmplmt invert_imag
     (
         .in (imag_sq_out),
         .out (imag_sq_invert)
     );
         
-    
-    Adder final_real
-    (
-        .in1 (real_sq_out),
-        .in2 (imag_sq_invert),
-        .out (realOut)
-    );
+
     
 endmodule

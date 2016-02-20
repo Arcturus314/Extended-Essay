@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="D:/Files/Vivado/EE/EE-GITHUB/Extended-Essay/Extended-Essay-master/Extended-Essay-master/Mandelbrot_NOT_CLOCKED/Mandelbrot_NOT_CLOCKED.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="synth_1"/>
+	</Run>
+</Runs>
+

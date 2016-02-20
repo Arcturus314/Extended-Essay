@@ -23,42 +23,26 @@
 module Complex_add(
     input [7:0] realIn,
     input [7:0] imagIn,
-    input clk,
-    input enable,
     output [7:0] realOut,
     output [7:0] imagOut
     );
     
-    //Implementation
-    //Module Instantiation
-    
+    //Implementation            
     wire [7:0] multiplier_realOut;
     wire [7:0] multiplier_imagOut;
-
     
+    //a^2-b^2+Ainit
+    assign realOut = realIn + multiplier_realOut;
+    //2bi+Binit
+    assign imagOut = imagIn + multiplier_imagOut;
+    
+    //Module Instantiation   
     Complex_Multiply multiplier
     (
         .realIn (realIn),
         .imagIn (imagIn),
-        .enable (enable),
-        .clk (clk),
         .realOut (multiplier_realOut),
         .imagOut (multiplier_imagOut)
     );
-    
-    Adder real_add
-    (
-        .in1 (realIn),
-        .in2 (multiplier_realOut),
-        .out (realOut)
-    );
-    
-    Adder imag_add
-    (
-        .in1 (imagIn),
-        .in2 (multiplier_imagOut),
-        .out (imagOut)
-    );
-    
-        
+           
 endmodule

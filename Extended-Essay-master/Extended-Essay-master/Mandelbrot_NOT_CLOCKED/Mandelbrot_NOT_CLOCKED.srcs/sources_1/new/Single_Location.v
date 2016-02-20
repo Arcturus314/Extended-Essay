@@ -33,29 +33,40 @@ module Single_Location(
     wire [7:0] realVal;
     wire [7:0] imagVal;
     wire comp_out;
-    reg counter_reset;
+    //reg counter_reset;
     wire [7:0] iter_count;
+    
+    //This is where values are stored as they are incremented
+    reg [7:0] temp_real;
+    reg [7:0] temp_imag;
     
     //assign current_iter = iter_count;
     //module declarations
+    
+    
+    //Shouldn't need this, I just have to hit reset
+    initial
+    begin
+        temp_real <= real_coords;
+        temp_imag <= imag_coords;
+    end
+    
 
     Complex_add adder
     (
-        .realIn (real_coords),
-        .imagIn (imag_coords),
-        .clk (clock),
-        .enable (enable),
+        .realIn (temp_real),
+        .imagIn (temp_imag),
         .realOut (realVal),
         .imagOut (imagVal)
     );
     
     Comparator compare
     (
-        .realIn (realVal),
-        .imagIn (imagVal),
-        .dim (01'b1), //cannot exceed box of max size 2) (not used)
+        .realIn (temp_real),
+        .imagIn (temp_imag),
+        //.dim (01'b1), //cannot exceed box of max size 2) (not used)
         .enable (enable),
-        .clk (clock),
+        //.clk (clock),
         .comp_out (comp_out)
     );
     
@@ -63,16 +74,22 @@ module Single_Location(
     (
         .clock (clock),
         .enable (enable),
-        .reset (counter_reset),
+        .reset (reset),
         .count (iter_count)
     );
     
     always @(posedge clock)
     begin
+        if (enable == 1)
+        begin
+            temp_real <= realVal;
+            temp_imag <= imagVal;
+        end
         if (reset == 1)
-            counter_reset <= 1;
-        else if (reset == 0)
-            counter_reset <= 0;
+        begin
+            temp_real <= real_coords;
+            temp_imag <= imag_coords;
+        end
         if (comp_out == 1)
             iterations <= iter_count;
     end
