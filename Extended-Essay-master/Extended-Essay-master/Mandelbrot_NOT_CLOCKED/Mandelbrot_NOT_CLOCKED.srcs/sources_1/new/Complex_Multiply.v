@@ -36,6 +36,8 @@ module Complex_Multiply(
     assign realOut = real_sq_out + imag_sq_invert;
     //finding 2bi
     assign imagOut = imagIn + imagIn;
+    //Inverting imag_sq_out
+    assign imag_sq_invert = ~imag_sq_out + 1'b1;
     
     //module instantiations
     Multiplier real_sq
@@ -51,13 +53,6 @@ module Complex_Multiply(
         .in2 (imagIn),
         .out (imag_sq_out)
     );
-    
-    ToTCmplmt invert_imag
-    (
-        .in (imag_sq_out),
-        .out (imag_sq_invert)
-    );
-        
 
     
 endmodule

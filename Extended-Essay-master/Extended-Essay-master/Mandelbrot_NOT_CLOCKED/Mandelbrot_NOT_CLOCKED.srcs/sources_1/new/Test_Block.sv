@@ -41,11 +41,7 @@ module Test_Block(
     wire clock;
     
         
-/*generate
-    genvar i;
-        for (i = 0; i < 256; i = i + 1)
-            reg [7:0] iter[i];
-    endgenerate;*/
+        
     Clock_Divide newClock
     (
         .clock (clockIn),

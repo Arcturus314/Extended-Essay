@@ -1,0 +1,57 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Mon Feb 22 20:57:17 2016
+| Host         : Kaveh_Bardia_PC running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file compare_test_control_sets_placed.rpt
+| Design       : compare_test
+| Device       : xc7a35t
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     4 |
+| Minimum Number of register sites lost to control set restrictions |    28 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+---------------+------------------+------------------+----------------+
+|          Clock Signal          | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------------------+---------------+------------------+------------------+----------------+
+|  comparator_out_reg[3]_i_2_n_0 |               |                  |                1 |              1 |
+|  comparator_out_reg[2]_i_2_n_0 |               |                  |                1 |              1 |
+|  comparator_out_reg[1]_i_2_n_0 |               |                  |                1 |              1 |
+|  comparator_out_reg[0]_i_2_n_0 |               |                  |                1 |              1 |
++--------------------------------+---------------+------------------+------------------+----------------+
+
+

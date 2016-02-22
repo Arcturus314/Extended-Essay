@@ -1,8 +1,8 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2015.3 (win64) Build 1368829 Mon Sep 28 20:06:43 MDT 2015
-| Date         : Mon Feb 15 19:33:27 2016
-| Host         : Kaveh_SP running 64-bit major release  (build 9200)
+| Tool Version : Vivado v.2015.4 (win64) Build 1412921 Wed Nov 18 09:43:45 MST 2015
+| Date         : Mon Feb 22 21:45:58 2016
+| Host         : Kaveh_Bardia_PC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file Test_Block_utilization_synth.rpt -pb Test_Block_utilization_synth.pb
 | Design       : Test_Block
 | Device       : 7a35tcpg236-1
@@ -27,18 +27,18 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+-------------------------+------+-------+-----------+-------+
-|        Site Type        | Used | Fixed | Available | Util% |
-+-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 2895 |     0 |     20800 | 13.92 |
-|   LUT as Logic          | 2895 |     0 |     20800 | 13.92 |
-|   LUT as Memory         |    0 |     0 |      9600 |  0.00 |
-| Slice Registers         | 4155 |     0 |     41600 |  9.99 |
-|   Register as Flip Flop | 4155 |     0 |     41600 |  9.99 |
-|   Register as Latch     |    0 |     0 |     41600 |  0.00 |
-| F7 Muxes                |  272 |     0 |     16300 |  1.67 |
-| F8 Muxes                |  136 |     0 |      8150 |  1.67 |
-+-------------------------+------+-------+-----------+-------+
++-------------------------+-------+-------+-----------+--------+
+|        Site Type        |  Used | Fixed | Available |  Util% |
++-------------------------+-------+-------+-----------+--------+
+| Slice LUTs*             | 22889 |     0 |     20800 | 110.04 |
+|   LUT as Logic          | 22889 |     0 |     20800 | 110.04 |
+|   LUT as Memory         |     0 |     0 |      9600 |   0.00 |
+| Slice Registers         |  9008 |     0 |     41600 |  21.65 |
+|   Register as Flip Flop |  7984 |     0 |     41600 |  19.19 |
+|   Register as Latch     |  1024 |     0 |     41600 |   2.46 |
+| F7 Muxes                |   272 |     0 |     16300 |   1.67 |
+| F8 Muxes                |   136 |     0 |      8150 |   1.67 |
++-------------------------+-------+-------+-----------+--------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -55,9 +55,9 @@ Table of Contents
 | 0     |            _ |       Reset |            - |
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
-| 0     |          Yes |           - |        Reset |
-| 256   |          Yes |         Set |            - |
-| 3899  |          Yes |       Reset |            - |
+| 1024  |          Yes |           - |        Reset |
+| 1372  |          Yes |         Set |            - |
+| 6612  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -77,11 +77,12 @@ Table of Contents
 3. DSP
 ------
 
-+-----------+------+-------+-----------+-------+
-| Site Type | Used | Fixed | Available | Util% |
-+-----------+------+-------+-----------+-------+
-| DSPs      |    0 |     0 |        90 |  0.00 |
-+-----------+------+-------+-----------+-------+
++----------------+------+-------+-----------+-------+
+|    Site Type   | Used | Fixed | Available | Util% |
++----------------+------+-------+-----------+-------+
+| DSPs           |   45 |     0 |        90 | 50.00 |
+|   DSP48E1 only |   45 |       |           |       |
++----------------+------+-------+-----------+-------+
 
 
 4. IO and GT Specific
@@ -90,7 +91,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   19 |     0 |       106 | 17.92 |
+| Bonded IOB                  |   27 |     0 |       106 | 25.47 |
 | Bonded IPADs                |    0 |     0 |        10 |  0.00 |
 | Bonded OPADs                |    0 |     0 |         4 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         5 |  0.00 |
@@ -146,24 +147,26 @@ Table of Contents
 7. Primitives
 -------------
 
-+----------+------+---------------------+
-| Ref Name | Used | Functional Category |
-+----------+------+---------------------+
-| FDRE     | 3899 |        Flop & Latch |
-| LUT6     | 1062 |                 LUT |
-| LUT2     |  522 |                 LUT |
-| LUT3     |  518 |                 LUT |
-| LUT1     |  276 |                 LUT |
-| MUXF7    |  272 |               MuxFx |
-| LUT4     |  259 |                 LUT |
-| LUT5     |  258 |                 LUT |
-| FDSE     |  256 |        Flop & Latch |
-| MUXF8    |  136 |               MuxFx |
-| OBUF     |   16 |                  IO |
-| CARRY4   |    5 |          CarryLogic |
-| IBUF     |    3 |                  IO |
-| BUFG     |    2 |               Clock |
-+----------+------+---------------------+
++----------+-------+---------------------+
+| Ref Name |  Used | Functional Category |
++----------+-------+---------------------+
+| LUT2     | 12534 |                 LUT |
+| FDRE     |  6612 |        Flop & Latch |
+| LUT6     |  4915 |                 LUT |
+| CARRY4   |  4765 |          CarryLogic |
+| LUT3     |  4268 |                 LUT |
+| LUT4     |  2918 |                 LUT |
+| LUT5     |  2517 |                 LUT |
+| FDSE     |  1372 |        Flop & Latch |
+| LDCE     |  1024 |        Flop & Latch |
+| LUT1     |   939 |                 LUT |
+| MUXF7    |   272 |               MuxFx |
+| MUXF8    |   136 |               MuxFx |
+| DSP48E1  |    45 |    Block Arithmetic |
+| OBUF     |    16 |                  IO |
+| IBUF     |    11 |                  IO |
+| BUFG     |     2 |               Clock |
++----------+-------+---------------------+
 
 
 8. Black Boxes

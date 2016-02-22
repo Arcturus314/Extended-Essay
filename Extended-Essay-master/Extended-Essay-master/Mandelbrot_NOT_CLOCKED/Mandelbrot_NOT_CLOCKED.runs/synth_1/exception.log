@@ -1,0 +1,4 @@
+ERROR: Exception caught trying to open file D:\Files\Vivado\EE\EE-GITHUB\Extended-Essay\Extended-Essay-master\Extended-Essay-master\Mandelbrot_NOT_CLOCKED\Mandelbrot_NOT_CLOCKED.runs\synth_1/runme.log
+	Exception name: Error
+	Exception error code: 70
+	Exception message: Permission denied

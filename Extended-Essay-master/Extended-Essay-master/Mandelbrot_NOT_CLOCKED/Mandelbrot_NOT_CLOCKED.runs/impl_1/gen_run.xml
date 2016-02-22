@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1455564813">
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1456177275">
   <File Type="OPT-DCP" Name="Test_Block_opt.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
@@ -56,15 +56,6 @@
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/ToTCmplmt.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/new/ToTCmplmt.v"/>
-        <Attr Name="ImportTime" Val="1449747142"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Multiplier.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/new/Multiplier.v"/>
@@ -135,6 +126,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/ToTCmplmt.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/new/ToTCmplmt.v"/>
+        <Attr Name="ImportTime" Val="1449747142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/Adder.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -176,9 +177,13 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2015"/>
+    <StratHandle Name="Area_Explore" Flow="Vivado Implementation 2015">
+      <Desc>Uses multiple optimization algorithms to get potentially fewer LUTs.</Desc>
+    </StratHandle>
     <Step Id="init_design"/>
-    <Step Id="opt_design"/>
+    <Step Id="opt_design">
+      <Option Id="Directive">1</Option>
+    </Step>
     <Step Id="power_opt_design"/>
     <Step Id="place_design"/>
     <Step Id="post_place_power_opt_design"/>

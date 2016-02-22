@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1455564726">
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1456177275">
   <File Type="RDS-DCP" Name="Test_Block.dcp"/>
   <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <File Type="RDS-UTIL-PB" Name="Test_Block_utilization_synth.pb"/>
@@ -13,15 +13,6 @@
   <File Type="VDS-TIMING-PB" Name="Test_Block_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/ToTCmplmt.v">
-      <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/new/ToTCmplmt.v"/>
-        <Attr Name="ImportTime" Val="1449747142"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/new/Multiplier.v">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/new/Multiplier.v"/>
@@ -92,6 +83,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/sources_1/new/ToTCmplmt.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../TCmplmt_ALU/TCmplmt_ALU.srcs/sources_1/new/ToTCmplmt.v"/>
+        <Attr Name="ImportTime" Val="1449747142"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/new/Adder.v">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -133,16 +134,12 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2015">
-      <Desc>Higher performance designs, resource sharing is turned off, the global fanout guide is set to a lower number, FSM extraction forced to one-hot, LUT combining is disabled, equivalent registers are preserved, SRL are inferred  with a larger threshold</Desc>
+    <StratHandle Name="Flow_AreaOptimized_high" Flow="Vivado Synthesis 2015">
+      <Desc>Performs general area optimizations including changing the threshold for control set optimizations, forcing ternary adder implementation, applying lower thresholds for use of carry chain in comparators and also area optimized mux optimizations.</Desc>
     </StratHandle>
     <Step Id="synth_design">
-      <Option Id="ResourceSharing">2</Option>
-      <Option Id="RepFanoutThreshold">400</Option>
-      <Option Id="FsmExtraction">1</Option>
-      <Option Id="ShregMinSize">5</Option>
-      <Option Id="KeepEquivalentRegisters">1</Option>
-      <Option Id="NoCombineLuts">1</Option>
+      <Option Id="Directive">1</Option>
+      <Option Id="ControlSetOptThreshold">1</Option>
     </Step>
   </Strategy>
 </GenRun>
